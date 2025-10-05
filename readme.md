@@ -73,7 +73,7 @@ App.jsx
 index.js
 
 yaml
-Copy code
+
 
 ---
 
@@ -97,8 +97,7 @@ MONGO_URI=mongodb://localhost:27017/mern_csv_distributor
 JWT_SECRET=your_jwt_secret_here
 Start MongoDB (local):
 
-bash
-Copy code
+
 # Linux/macOS
 sudo service mongod start
 
@@ -106,22 +105,19 @@ sudo service mongod start
 net start MongoDB
 Run the backend server:
 
-bash
-Copy code
+
 npm run dev
 Backend runs on: http://localhost:5000
 
 Frontend Setup
 Install dependencies:
 
-bash
-Copy code
+
 cd frontend
 npm install
 Start the frontend:
 
-bash
-Copy code
+
 npm start
 Frontend runs on: http://localhost:3000
 
@@ -143,8 +139,7 @@ Security: JWT tokens are required for all protected routes. Make sure tokens are
 
 Frontend fetching: Make sure Axios attaches Authorization header:
 
-js
-Copy code
+
 axios.get("/lists", {
   headers: { Authorization: `Bearer ${token}` }
 });
@@ -153,14 +148,12 @@ Known limitation: Agents cannot fetch lists without a backend route specifically
 Scripts
 Backend:
 
-bash
-Copy code
+
 npm run dev      # Runs backend with nodemon
 npm start        # Runs backend normally
 Frontend:
 
-bash
-Copy code
+
 npm start        # Runs frontend in development mode
 npm run build    # Builds production-ready frontend
 Contact
